@@ -1,0 +1,12 @@
+243e24fee665023cfc9ca76dfe9b6861 *DESCRIPTION
+8ccb4d8a2328b6d501e9dda61ff9fadd *NAMESPACE
+a497a9854da2c4daac5eefa0b11893b2 *R/data.R
+135b87016c708b4a4b3404b6de63660a *R/getMap.R
+526f7783164650e065c00ef658faf2ab *build/vignette.rds
+5a2b4583aa14e11a7716a706646cffd2 *data/ad.rda
+78fd91f2714d39321c8ebea5e6b7115d *inst/doc/Introduction.R
+cc7ca3c3c6f5e3a70027d4ef16891a2f *inst/doc/Introduction.Rmd
+c07040d76705677239f0787aa5879f37 *inst/doc/Introduction.html
+9bddd9330fe67088364c2dc7dfc91c99 *man/ad.Rd
+a9d2b66a23a89c6b61db9bd818adad3c *man/getMap.Rd
+cc7ca3c3c6f5e3a70027d4ef16891a2f *vignettes/Introduction.Rmd
