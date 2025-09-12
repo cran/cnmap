@@ -7,16 +7,16 @@ if (getRversion() >= "2.15.1") {
 #' @description
 #' According to the code and name of the administrative division at the county 
 #' level and above provided by the Ministry of Civil Affairs of the People's 
-#' Republic of China in 2022 (<https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html>), 
+#' Republic of China in 2022, 
 #' get the map vector file online from the website of AutoNavi Map (<http://datav.aliyun.com/portal/school/atlas/area_selector>).
 #' @param name character. An name of the China's administrative division at the 
 #' county level or above. The name of administrative division needs to be consistent 
 #' with the website provided by the Ministry of Civil Affairs of the People's 
-#' Republic of China in 2022 (<https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html>).
+#' Republic of China in 2022.
 #' @param code character. A code of the China's administrative division at the 
 #' county level or above. The code of administrative division needs to be consistent 
 #' with the website provided by the Ministry of Civil Affairs of the People's 
-#' Republic of China in 2022 (<https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html>).
+#' Republic of China in 2022.
 #' @param subRegion A logical evaluating to TRUE or FALSE indicating whether the
 #' sub regions of the administrative region should be included. The default is 
 #' FALSE, not included.

@@ -1,13 +1,10 @@
 ## ----include = FALSE----------------------------------------------------------
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+knitr::opts_chunk$set(echo = TRUE)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  install.packages("cnmap")
+# install.packages("cnmap")
 
-## -----------------------------------------------------------------------------
+## ----fig.height=5, fig.width=5------------------------------------------------
 library(ggplot2)
 library(sf)
 library(cnmap)
@@ -15,23 +12,24 @@ library(cnmap)
 map1 <- getMap(name = "中国")
 ggplot(data = map1) + geom_sf()
 
-## -----------------------------------------------------------------------------
+## ----fig.height=5, fig.width=5------------------------------------------------
+# code and name: https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html
 map2 <- getMap(code = "100000", subRegion = TRUE) 
 ggplot(data = map2) + geom_sf()
 
-## -----------------------------------------------------------------------------
+## ----fig.height=5, fig.width=5------------------------------------------------
 map3 <- getMap(name = "吉林省", subRegion = TRUE)
 ggplot(data = map3) + geom_sf()
 
-## -----------------------------------------------------------------------------
+## ----fig.height=5, fig.width=5------------------------------------------------
 map4 <- getMap(name = "长春市", subRegion = TRUE)
 ggplot(data = map4) + geom_sf()
 
-## -----------------------------------------------------------------------------
+## ----fig.height=5, fig.width=5------------------------------------------------
 map5 <- getMap(code = "220100", subRegion = TRUE) 
 ggplot(data = map5) + geom_sf()
 
-## -----------------------------------------------------------------------------
+## ----fig.height=4, fig.width=5------------------------------------------------
 map6 <- getMap(name = "香港特别行政区", subRegion = TRUE)
 ggplot(data = map6) + geom_sf()
 

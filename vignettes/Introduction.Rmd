@@ -1,7 +1,8 @@
 ---
-title: "China Map Data from AutoNavi Map"
+title: "cnmap"
 author: "Panfeng Zhang"
 date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{cnmap}
   %\VignetteEngine{knitr::rmarkdown}
@@ -9,13 +10,9 @@ vignette: >
 ---
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-According to the code or the name of the administrative division at the county level and above provided by the Ministry of Civil Affairs of the People's Republic of China in 2022 (<https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html>), get the map file online from the website of AutoNavi Map (<http://datav.aliyun.com/portal/school/atlas/area_selector>).
 
 ### Installation
 
@@ -24,8 +21,10 @@ Install the latest CRAN release via command:
 install.packages("cnmap")
 ```
 
+According to the code or the name of the administrative division at the county level and above provided by the Ministry of Civil Affairs of the People's Republic of China in 2022, get the map file of online from the website <http://datav.aliyun.com/portal/school/atlas/area_selector>.
+
 ### Usage 1
-```{r}
+```{r, fig.height=5, fig.width=5}
 library(ggplot2)
 library(sf)
 library(cnmap)
@@ -35,25 +34,26 @@ ggplot(data = map1) + geom_sf()
 ```
 
 ### Usage 2
-```{r}
+```{r, fig.height=5, fig.width=5}
+# code and name: https://www.mca.gov.cn/mzsj/xzqh/2022/202201xzqh.html
 map2 <- getMap(code = "100000", subRegion = TRUE) 
 ggplot(data = map2) + geom_sf()
 ```
 
 ### Usage 3
-```{r}
+```{r, fig.height=5, fig.width=5}
 map3 <- getMap(name = "吉林省", subRegion = TRUE)
 ggplot(data = map3) + geom_sf()
 ```
 
 ### Usage 4
-```{r}
+```{r, fig.height=5, fig.width=5}
 map4 <- getMap(name = "长春市", subRegion = TRUE)
 ggplot(data = map4) + geom_sf()
 ```
 
 ### Usage 5
-```{r}
+```{r, fig.height=5, fig.width=5}
 map5 <- getMap(code = "220100", subRegion = TRUE) 
 ggplot(data = map5) + geom_sf()
 ```
@@ -61,7 +61,6 @@ ggplot(data = map5) + geom_sf()
 map4 is equivalent to map5.
 
 ### Usage 6
-```{r}
+```{r, fig.height=4, fig.width=5}
 map6 <- getMap(name = "香港特别行政区", subRegion = TRUE)
 ggplot(data = map6) + geom_sf()
-```
