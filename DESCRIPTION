@@ -1,6 +1,6 @@
 Package: cnmap
 Title: China Map Data from AutoNavi Map
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     c(person(given = "Panfeng", 
              family = "Zhang", 
@@ -8,7 +8,7 @@ Authors@R:
              email = "zhangpf08@163.com", 
              comment = c(ORCID = "0000-0001-6084-9231")))
 Maintainer: Panfeng Zhang <zhangpf08@163.com>
-Description: According to the code or the name of the administrative division at the county level and above provided by the Ministry of Civil Affairs of the People's Republic of China in 2022, get the map file online from the website of AutoNavi Map (<http://datav.aliyun.com/portal/school/atlas/area_selector>).
+Description: According to the codes and names of county-level and above administrative divisions released in 2022 by the Ministry of Civil Affairs of the People's Republic of China, the online vector map files were retrieved from the website (available at: <http://datav.aliyun.com/portal/school/atlas/area_selector>). This study was supported by the National Natural Science Foundation of China (NSFC, Grant No. 42205177).
 URL: https://github.com/PanfengZhang/cnmap
 BugReports: https://github.com/PanfengZhang/cnmap/issues
 Depends: R (>= 4.3.0)
@@ -20,8 +20,8 @@ LazyData: true
 Suggests: knitr, rmarkdown, ggplot2, tibble
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2025-09-11 13:55:04 UTC; zhang
+Packaged: 2026-02-27 05:24:53 UTC; zhang
 Author: Panfeng Zhang [aut, cre] (ORCID:
     <https://orcid.org/0000-0001-6084-9231>)
 Repository: CRAN
-Date/Publication: 2025-09-12 05:30:22 UTC
+Date/Publication: 2026-02-27 08:40:09 UTC
